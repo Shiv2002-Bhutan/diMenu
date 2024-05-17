@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './NavBar.css';
 
 // Importing the FontAwesomeIcon component and the required icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faHamburger } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import { StoreContext } from '../context/StoreContext';
 
 const NavBar = () => {
     const [menu, setMenu] = useState("Home");
+
+    const {getTotalAmount} = useContext(StoreContext);
 
     return (
         <div className='navbar'>
@@ -21,8 +24,8 @@ const NavBar = () => {
                     <FontAwesomeIcon icon={faSearch} />
                 </div>
                 <div className="navbar-search-icon">
-                    <FontAwesomeIcon icon={faHamburger} />
-                    <div className="dot"></div>
+                    <Link to ="/Card"><FontAwesomeIcon icon={faHamburger} /></Link>
+                    <div className={getTotalAmount()===0?"":"dot"}></div>
                 </div>
             </div>
         </div>
