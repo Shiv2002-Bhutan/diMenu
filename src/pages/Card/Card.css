@@ -71,7 +71,10 @@
     background-color: white;
     border: 1px solid rgb(27, 27, 27);
     width: max(16vw,250px);
-    height: 20px;
+    padding: 10px;
+}
+.input-number{
+    -moz-appearance: textfield;
 }
 @media (max-width:750px) {
     .cart-bottom{

@@ -1,99 +1,118 @@
-.navbar{
+.navbar {
     padding: 20px 0px;
     display: flex;
     justify-items: center;
     justify-content: space-between;
 }
-.navbar-menu{
+
+.navbar-menu {
     display: flex;
     list-style: none;
-    color:#49557e ;
+    color: #49557e;
     gap: 20px;
     font-size: 18px;
-
 }
-.navbar-right{
+
+.navbar-right {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
+
 .navbar-right .search-icon {
-  margin-left: 10px; 
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .navbar-right .navbar-search-icon {
-  display: flex;
-  align-items: center;
-  margin-left: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
 }
 
-
-.navbar .active{
+.navbar .active {
     padding-bottom: 2px;
     border-bottom: 2px solid #49557e;
-
 }
-.navbar li{
-  cursor: pointer;
+
+.navbar li {
+    cursor: pointer;
 }
-.navbar-right .navbar-search-icon{
-  position: relative;
+
+.navbar-right .navbar-search-icon {
+    position: relative;
 }
-.navbar-search-icon .dot{
-  position: absolute;
-  min-width: 10px;
-  min-height: 10px;
-  background-color: rgb(239, 74, 45);
-  border-radius: 50%;
-  top: -8px;
-  right: -8px;
+
+.order-btn {
+    border: none;
+    color: white;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: tomato;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
 }
-@media (max-width:1050px) {
-  .navbar-menu{
-    gap: 20px;
-    font-size:17px ;
 
-  }
-  .navbar-right{
-    gap: 30px;
-
-  }.navbar-right img{
-    width: 22px;
-    
-  }
-  
-  
+.navbar-search-icon .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: rgb(40, 134, 9);
+    border-radius: 50%;
+    top: -8px;
+    right: -8px;
 }
-@media (max-width:950px) {
-  .navbar-menu{
-    gap: 15px;
-    font-size:16px ;
 
-  }
-  .navbar-right{
-    gap: 20px;
-
-  }.navbar-right img{
-    width: 20px;
-    
-  }
-  
-  
+.search-bar {
+    display: none;
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
 }
-@media (max-width:750px) {
-  .navbar-menu{
-   gap: 12px;
-   font-size: 14px;
 
-  }
-  .navbar-right{
-    gap: 15px;
+.search-bar.visible {
+    display: block;
+}
 
-  }.navbar-right img{
-    width: 15px;
-    
-  }
-  
-  
+.search-bar input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+@media (max-width: 1050px) {
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbar-right {
+        gap: 30px;
+    }
+    .navbar-right img {
+        width: 22px;
+    }
+}
+
+@media (max-width: 950px) {
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right {
+        gap: 20px;
+    }
+    .navbar-right img {
+        width: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .navbar-menu {
+        gap: 12px;
+        font-size: 14px;
+    }
+    .navbar-right {
+        gap: 15px;
+    }
+    .navbar-right img {
+        width: 15px;
+    }
 }

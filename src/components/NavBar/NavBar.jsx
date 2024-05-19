@@ -24,7 +24,7 @@ const NavBar = () => {
                     <FontAwesomeIcon icon={faSearch} />
                 </div>
                 <div className="navbar-search-icon">
-                    <Link to ="/Card"><FontAwesomeIcon icon={faHamburger} /></Link>
+                    <Link to ="/Card"><button className='order-btn'>Place Order</button></Link>
                     <div className={getTotalAmount()===0?"":"dot"}></div>
                 </div>
             </div>
