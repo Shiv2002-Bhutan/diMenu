@@ -42,6 +42,7 @@
     right: 15px;
     cursor: pointer;
     border-radius: 50%;
+    border:3px solid green;
 }
 .food-item-counter{
     position:absolute;
@@ -53,7 +54,10 @@
     padding: 6px;
     border-radius: 50px;
     background-color: white;
+    border: 1px solid green;
 }
 .food-item-counter img{
     width: 30px;
+    cursor: pointer;
+  
 }
